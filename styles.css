@@ -1,0 +1,162 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Input form styling */
+.container {
+    max-width: 600px;
+    width: 90%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    font-size: 1.1em;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea, input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Full-page resume preview styling */
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.resume-preview {
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.resume-preview h2 {
+    font-size: 2.2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.photo-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.resume-preview p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.resume-preview a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resume-preview a:hover {
+    text-decoration: underline;
+}
+
+/* Download button */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .container, .resume-preview {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .resume-preview h2 {
+        font-size: 1.8em;
+    }
+
+    .photo-container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .resume-preview p {
+        font-size: 1.1em;
+    }
+}
